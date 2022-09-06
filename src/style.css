@@ -48,7 +48,7 @@ a:hover {
 #RSS {
   display: flex;
   align-self: center;
-  padding-right: 7rem;
+  padding-right: 15rem;
   color: black;
 }
 
@@ -57,9 +57,12 @@ header {
   display: flex;
   position: fixed;
   opacity: 90%;
-  margin-bottom: 1rem;
-  border-bottom: 1em;
-  border-color: black;
+  border-bottom: 0.02em;
+  border-color: gray;
+  border-style: solid;
+  border-top: 0em;
+  border-right: 0em;
+  border-left: 0em;
 }
 
 nav ul {
@@ -82,17 +85,29 @@ nav li {
   padding-left: 17rem;
 }
 
+main {
+  padding-top: 6rem;
+}
+
 section {
   display: flex;
+  align-items: space-between;
   flex-wrap: wrap;
+  align-items: center;
   margin: 1rem;
   padding: 1rem;
 }
 
-article {
+section > article {
   background-color: white;
+  border-radius: 5px;
   padding: 1rem;
-  margin: 1rem;
+  /* margin: 1rem 0; */
+}
+
+article a img {
+  display: flex;
+  margin: 0.5rem;
 }
 
 /* main nav {

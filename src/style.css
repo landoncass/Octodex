@@ -22,7 +22,7 @@ a:hover {
   color: #2f5cd8;
 }
 
-#title {
+/* #title {
   display: flex;
   align-self: center;
   font-weight: bold;
@@ -50,13 +50,14 @@ a:hover {
   align-self: center;
   padding-right: 15rem;
   color: black;
-}
+} */
 
 header {
   background: white;
   display: flex;
   position: fixed;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   opacity: 90%;
   border-bottom: 0.02em;
@@ -65,11 +66,22 @@ header {
   border-top: 0em;
   border-right: 0em;
   border-left: 0em;
+  width: 100%;
+}
+
+#twitter img {
+  display: none;
 }
 
 nav ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
+}
+
+nav ul li {
+  padding: 0.5rem;
 }
 
 main {
@@ -79,7 +91,7 @@ main {
 
 section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   /* margin: 1rem; */
@@ -113,7 +125,13 @@ article a img {
   padding-bottom: 0;
 }
 
-@media {
+@media all and (width < 780px) {
+  #twitter img {
+    display: inline;
+  }
+  #twitter span {
+    display: none;
+  }
 }
 
 /* main nav {

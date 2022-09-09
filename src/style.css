@@ -111,8 +111,9 @@ article ul {
   justify-content: flex-start;
 }
 
-#Picture {
+a #Picture {
   justify-content: flex-end;
+  border-radius: 50%;
 }
 
 article a img {
@@ -125,12 +126,26 @@ article a img {
   padding-bottom: 0;
 }
 
-@media all and (width < 780px) {
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media all and (max-width: 572px) {
+  main {
+    padding-top: 11rem;
+  }
+}
+
+@media all and (max-width: 780px) and (min-width: 572px) {
   #twitter img {
     display: inline;
   }
   #twitter span {
     display: none;
+  }
+  header {
+    justify-content: center;
   }
 }
 
